@@ -2,7 +2,7 @@ from time import sleep
 from pygame import mixer
 mixer.init()
 mixer.music.load('explosion.mp3')
-love = 0
+friend = 0
 alist = ["a", "A"]
 blist = ["B", "b"]
 clist = ["C", "c"]
@@ -31,12 +31,11 @@ while True:
     sleep(1)
     print('The left path looks dark and ominoous, the right path looks safe and well lit')
     sleep(1)
-    while True:
-        print("Which path wil you chose?")
-        sleep(1)
-        print("Left (dark and ominous) or right (safe and bright)")
-        answer = input()
-        if answer == "left":
+    print("Which path wil you chose?")
+    sleep(1)
+    print("Left (dark and ominous) or right (safe and bright)")
+    answer = input()
+    if answer == "left":
             #safe choice, story continues
             print("You and eevee go on the left path")
             sleep(.5)
@@ -53,6 +52,7 @@ while True:
             print("Eevee and bunnelby start sniffing eachother...")
             sleep(1)
             print("*" + Eevee + " made a friend!*")
+            friend = friend + 1
             print("Your eevee's love has increased by 10")
             love = love + 10
             # continue story
@@ -66,8 +66,38 @@ while True:
             answer2 = input()
             if answer2 in alist:
                 print("You go on the safe path")
+                sleep(1)
+                print("You and " + eevee + " are walking along the path when you come across a snorlax...")
+                sleep(1)
+                print("The Snorlax seems agitated...")
+                sleep(1)
+                print("Be carefull... ")
+                sleep(1)
+                print("*Your Eevee walks over to the Snorlax and gives it a hug!")
+                sleep(1)
+                print("Snorlax seems happier, i guess it was just having a bad day")
+                sleep(2)
+                print("Snorlax and Eevee become friends, + 1 friend, + 10 love")
+                friend = friend + 1
+                print("You and " + eevee + " continue your journey to lavender town...")
+                sleep(2)
                 #story continues to all the eevee endings
                 #your eevee will gain love
+                print("You come across another split...")
+                sleep(1)
+                print("The paths are labelled yes and no?? Which idiot thought of that...")
+                sleep(1)
+                print("The path that is labelled yes looks quite safe and the path that is labelled no is very closed off, you cannot see what is going on on path *no*")
+                sleep(3)
+                print("Which path are you choosing? yes/no")
+                answer5 = input()
+                if answer5 == "yes":
+                    print("You go onto path yes...")
+                    #path yes = safe
+                if answer5 == "no":
+                    print("You go on path no....")
+                    sleep(1)
+                    #you die.
             if answer2 in blist:
                 print("You go on the short path")
                 sleep(1)
@@ -172,8 +202,20 @@ while True:
                 sleep(1)
                 print("It doesnt look as peaceful as you expected...")
                 sleep(1)
-                
                 #a unicorn will kill you
+                print("Something is rumbling in the bushes...")
+                sleep(2)
+                print("A unicorn comes running out of the bushes and hit you")
+                sleep(.5)
+                print("Poor thing must have been scared, at least its okay now")
+                print("You on the other hand...")
+                sleep(1)
+                print("You are fatally injured and bleeding out")
+                sleep(1)
+                print("You died, your body couldnt hold on and gave out because of your injuries")
+                sleep(1)
+                print("Maybe going into a unicorn forest wasn't the smartest bet...")
+                sleep(2)
         if answer == "right":
             #bad choice, you die
             #there is a cliff and you slip and die
@@ -185,7 +227,6 @@ while True:
             sleep(1)
             print("You fell off the cliff, you have died")
             sleep(1)
-            break
         else:
          print("Sorry thats not a viable answer, try again")
          sleep(1)
