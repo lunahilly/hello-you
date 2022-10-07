@@ -85,6 +85,17 @@ while True:
                 sleep(2)
                 print("A townsperson walks up to you...")
                 sleep(1)
+                print("^Hello my name is Lila^")
+                sleep(1)
+                print("^I saw your Eevee over there and i was wondering if she would like to play with my pikachu?^")
+                sleep(1)
+                
+                print("Do you want " + Eevee + " to play with pikachu? yes/no")
+                answer3 = input()
+                if answer3 == "yes":    
+                    print("^Great!^")
+                if answer == "no":
+                        print("^Thats a shame :(")
             if answer2 in clist:
                 #you will die
                 print("You go into the unicorn forest")
