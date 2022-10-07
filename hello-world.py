@@ -128,7 +128,7 @@ while True:
                         print("Congratulations! You have made it to the Sylveon bonfire ending!")
                         sleep(1)
                         print("I am so proud of you " + name)
-                        sleep(1)
+                        sleep(2)
                     if answer4 in blist:
                         #pikachu and eevee kiss, eevee turns into umbreon
                         print("^Oh! uhmm sure, i would love too! :o ^")
@@ -157,9 +157,22 @@ while True:
                         sleep(2)
                 if answer == "no":
                         print("^Thats a shame :(")
+                        sleep(1)
+                        print("^I guess i'll talk to you some other time...")
+                        sleep(2)
+                        print("You and Eevee dont make any friends after that and live a lonely life in lavender town")
+                        sleep(3)
+                        print("You made it to the end!")
+                        sleep(1)
+                        print("You got the lonely ending...")
+                        sleep(2)
             if answer2 in clist:
                 #you will die
                 print("You go into the unicorn forest")
+                sleep(1)
+                print("It doesnt look as peaceful as you expected...")
+                sleep(1)
+                
                 #a unicorn will kill you
         if answer == "right":
             #bad choice, you die
