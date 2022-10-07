@@ -145,6 +145,16 @@ while True:
                         sleep(.5)
                         print("Eevee has evolved into an umbreon!")
                         sleep(1)
+                        print("-some time later-")
+                        sleep(1)
+                        print("You and " + Eevee + " have settled in into lavender town!")
+                        sleep(1)
+                        print(Eevee + " and Pikachu got married")
+                        sleep(3)
+                        print("Congratulations! You got the umbreon love ending")
+                        sleep(1)
+                        print("I am proud of you " + name)
+                        sleep(2)
                 if answer == "no":
                         print("^Thats a shame :(")
             if answer2 in clist:
