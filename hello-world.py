@@ -6,6 +6,8 @@ friend = 0
 alist = ["a", "A"]
 blist = ["B", "b"]
 clist = ["C", "c"]
+dlist = ["d", "D"]
+
 #hello world eindopdracht
 #speelt af in een pokemon wereld
 #trainer name and Eevee name can be chosen
@@ -52,6 +54,8 @@ while True:
             print("Eevee and bunnelby start sniffing eachother...")
             sleep(1)
             print("*" + Eevee + " made a friend!*")
+            sleep(1)
+            print("Achievement unlocked: Friends")
             friend = friend + 1
             print("Your eevee's love has increased by 10")
             love = love + 10
@@ -93,11 +97,85 @@ while True:
                 answer5 = input()
                 if answer5 == "yes":
                     print("You go onto path yes...")
-                    #path yes = safe
+                    #path yes = death
                 if answer5 == "no":
                     print("You go on path no....")
                     sleep(1)
-                    #you die.
+                    #you survive
+                    print("It looks a bit unsafe.....")
+                    sleep(1)
+                    print("Are you sure you wanna go on this path? yes/no")
+                    answer6 = input()
+                    if answer6 == "yes":
+                        #you dont die
+                        sleep(1)
+                        print("You continue walking on this path...")
+                        sleep(1)
+                        print("A wild Bulbasoar!")
+                        sleep(1)
+                        print("Bulbasoar challenges you...")
+                        sleep(1)
+                        print("Bulbasoar used Tackle")
+                        sleep(.5)
+                        print("Eevee dodged")
+                        sleep(.5)
+                        print("Eevee used quick attack")
+                        sleep(.5)
+                        print("critical hit!")
+                        sleep(0.5)
+                        print("Bulbasoar fainted...")
+                        sleep(1)
+                        print("You and eevee continue walking to lavender town")
+                        sleep(1)
+                        #play lavender town music
+                        print("Lavender town reached")
+                        sleep(1)
+                        #doors question
+                        print("You and eevee are walking around town in hopes to meet some people...")
+                        sleep(1)
+                        print("The streets are empty")
+                        sleep(0.5)
+                        print("What will you do?")
+                        sleep(0.5)
+                        print("A. knock on door yellow     B. knock on door pink    C. knock on door green    d. knock on door blue")
+                        answer7 = input()
+                        if answer7 in alist:
+                            #Jolteon of Flareon evolution
+                            print("You knock on the yellow door...")
+                            sleep(2)
+                        if answer7 in blist:
+                            #Espeon or Sylveon evolution
+                            print("You knock on the pink door...")
+                            sleep(2)
+                        if answer7 in clist:
+                            #Leafeon or Umbreon evolution
+                            print("You knock on the green door...")
+                            sleep(2)
+                        if answer7 in dlist:
+                            #Vaporeon or Glaceon evolution
+                            print("You knock on the blue door...")
+                            sleep(2)
+                    if answer6 == "no":
+                        #you die
+                        sleep(1)
+                        print("You go back and go on the safe looking path instead...")
+                        sleep(1)
+                        print("There is a nice looking Tyranitar there")
+                        sleep(1)
+                        print("OH!" + sleep(1) + " It wants to battle...")
+                        sleep(1)
+                        print("The tyranitar uses CRUNCH")
+                        sleep(0.5)
+                        print("CRITICAL HIT!")
+                        sleep(0.5)
+                        print("Your Eevee fainted")
+                        sleep(1)
+                        print("You died...")
+                        sleep(1)
+                        print("You got the Eevee battle ending!")
+                        sleep(1)
+                        print("You can play again to try and get a different ending")
+                        sleep(1)
             if answer2 in blist:
                 print("You go on the short path")
                 sleep(1)
@@ -147,6 +225,8 @@ while True:
                         sleep(1)
                         print("Eevee has evolved into a Sylveon!")
                         sleep(1)
+                        print("Achievement unlocked: Sylveon")
+                        sleep(1)
                         print("She must have been so filled with love from the bonfire she evolved into a fairy type!")
                         sleep(2)
                         print("some time later...")
@@ -174,6 +254,8 @@ while True:
                         print(Eevee + " is evolving!")
                         sleep(.5)
                         print("Eevee has evolved into an umbreon!")
+                        sleep(1)
+                        print("Achievement unlocked: Umbreon")
                         sleep(1)
                         print("-some time later-")
                         sleep(1)
@@ -226,13 +308,23 @@ while True:
             print("Suddenly you slip and fall")
             sleep(1)
             print("You fell off the cliff, you have died")
-            sleep(1)
+            sleep(2)
         else:
          print("Sorry thats not a viable answer, try again")
          sleep(1)
     while True:
+        print("Achievement(s) unlocked")
+        if answer == "left":
+            print("Friends")
+        if answer4 in blist:
+            print("Umbreon")
+        if answer4 in alist:
+            print("Sylveon")
+        #put other achievements here, achievement for every evolution
+        sleep(2)
         print("Would you like to play again? yes/no")
-        if answer == "yes":
+        answer0 = input()
+        if answer0 == "yes":
             print("goodluck!")
             sleep(2)
         if answer == "no":
