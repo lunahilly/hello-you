@@ -142,18 +142,100 @@ while True:
                             #Jolteon of Flareon evolution
                             print("You knock on the yellow door...")
                             sleep(2)
+                            print("A man opens the door, it's pokemon trainer Sparky!")
+                            sleep(1)
+                            print("^Oh hello! You must be the new trainer in town everyone is talking about! " + name + " right?^")
+                            sleep(1)
+                            print("^If you like i could show you around town?^")
+                            sleep(2)
+                            print("^Great! where do you wanna go first?^")
+                            sleep(1)
+                            print("^We can go to one of my favorite place, the racetrack!^")
+                            sleep(1)
+                            print("^Or if you want we can go to the towns bonfire!^")
+                            sleep(1)
+                            print("A. racetracks    B. bonfire")
+                            answer8 = input()
+                            if answer8 in alist:
+                                #jolteon evolution
+                                print("^Lets go to the racetracksssssss!!!!!^")
+                                sleep(1)
+                            if answer8 in blist:
+                                #flareon evolution
+                                print("^Great! Lets go to the towns bonfire! Maybe you can meet some people!^")
+                                sleep(1)
                         if answer7 in blist:
                             #Espeon or Sylveon evolution
                             print("You knock on the pink door...")
                             sleep(2)
+                            print("A man opens the door, it's doctor Heart!")
+                            sleep(1)
+                            print("^Oh hello! You must be the new trainer in town everyone is talking about! " + name + " right?^")
+                            sleep(1)
+                            print("^If you like i could show you around town?^")
+                            sleep(2)
+                            print("^Great! where do you wanna go first?^")
+                            sleep(1)
+                            print("^We can go to a fortune teller or the local daycare?^")
+                            sleep(1)
+                            print("A. fortune teller     B. daycare")
+                            answer9 = input()
+                            if answer9 in alist:
+                                #Espeon evolution
+                                print("^Great, my wife is actually the fortune teller, i love her!^")
+                                sleep(1)
+                            if answer9 in blist:
+                                #sylveon evolution
+                                print("^Really? Usually nobody wants to go to the daycare, i personally love kids^")
+                                sleep(1)
                         if answer7 in clist:
                             #Leafeon or Umbreon evolution
                             print("You knock on the green door...")
                             sleep(2)
+                            print("A woman opens the door, it's trainer Gardenia!")
+                            sleep(1)
+                            print("^Oh hello! You must be the new trainer in town everyone is talking about! " + name + " right?^")
+                            sleep(1)
+                            print("^If you like i could show you around town?^")
+                            sleep(2)
+                            print("^Great! where do you wanna go first?^")
+                            sleep(1)
+                            print("^Personally my favorite place is the botanical garden, but some people prefer the disco nearby^")
+                            sleep(1)
+                            print("A. botanical garden    B. disco")
+                            answer10 = input()
+                            if answer10 in alist:
+                                #leafeon evolution
+                                print("^Awesome! Lets go!^")
+                                sleep(1)
+                            if answer10 in blist:
+                                #Umbreon
+                                print("^Alright! It is a great place to meet people!^")
+                                sleep(1)
                         if answer7 in dlist:
                             #Vaporeon or Glaceon evolution
                             print("You knock on the blue door...")
                             sleep(2)
+                            print("A girl opens the door, it's aqua!")
+                            sleep(1)
+                            print("^Oh hello! You must be the new trainer in town everyone is talking about! " + name + " right?^")
+                            sleep(1)
+                            print("^If you like i could show you around town?^")
+                            sleep(2)
+                            print("^Great! where do you wanna go first?^")
+                            sleep(1)
+                            print("^I love the waterpark and the ice rink! They are the best places in town!^")
+                            sleep(1)
+                            print("A. waterpark     B. ice rink")
+                            answer11 = input()
+                            if answer11 in alist:
+                                #vaporeon evolution
+                                print("^YAY! I havent been there in such a long time!^")
+                                sleep(1)
+                            if answer11 in blist:
+                                #glaceon evoluton
+                                print("^Good choice, its such a lovely place!^")
+                                sleep(1)
                     if answer6 == "no":
                         #you die
                         sleep(1)
