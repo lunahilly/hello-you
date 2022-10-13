@@ -1,7 +1,6 @@
 from time import sleep
 from pygame import mixer
-mixer.init()
-mixer.music.load('explosion.mp3')
+
 friend = 0
 alist = ["a", "A"]
 blist = ["B", "b"]
@@ -298,7 +297,7 @@ while True:
                 sleep(1)
                 print("Maybe going into a unicorn forest wasn't the smartest bet...")
                 sleep(2)
-        if answer == "right":
+    if answer == "right":
             #bad choice, you die
             #there is a cliff and you slip and die
             print("You go on the right safe path...")
@@ -309,17 +308,12 @@ while True:
             sleep(1)
             print("You fell off the cliff, you have died")
             sleep(2)
-        else:
+    else:
          print("Sorry thats not a viable answer, try again")
          sleep(1)
     while True:
-        print("Achievement(s) unlocked")
-        if answer == "left":
-            print("Friends")
-        if answer4 in blist:
-            print("Umbreon")
-        if answer4 in alist:
-            print("Sylveon")
+        
+        
         #put other achievements here, achievement for every evolution
         sleep(2)
         print("Would you like to play again? yes/no")
