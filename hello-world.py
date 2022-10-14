@@ -244,6 +244,7 @@ while True:
                                 #Espeon evolution
                                 print("^Great, my wife is actually the fortune teller, i love her!^")
                                 sleep(1)
+                                print("You and Dr. Heart go to his wife")
                             if answer9 in blist:
                                 #sylveon evolution
                                 print("^Really? Usually nobody wants to go to the daycare, i personally love kids^")
