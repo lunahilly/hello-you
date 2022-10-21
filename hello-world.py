@@ -1,5 +1,7 @@
 from time import sleep
 from pygame import mixer
+mixer.init()
+mixer.music.load('explosion.mp3')
 
 friend = 0
 alist = ["a", "A"]
@@ -91,7 +93,7 @@ while True:
                 sleep(2)
                 print("The paths are labelled yes and no?? Which idiot thought of that...")
                 sleep(2)
-                print("The path that is labelled yes looks quite safe and the path that is labelled no is very closed off, you cannot see what is going on on path *no*")
+                print("The path that is labelled yes looks quite safe and the path that is labelled no is very closed off, you cannot see what is going on on path no")
                 sleep(3)
                 print("Which path are you choosing? yes/no")
                 answer5 = input()
@@ -145,7 +147,11 @@ while True:
                         sleep(1)
                         print("You and eevee continue walking to lavender town")
                         sleep(2)
+                        mixer.init()
+                        mixer.music.load('explosion.mp3')
+                        mixer.music.play('explosion.mp3')
                         #play lavender town music
+                        #put lavender town music file in the same map as this code file!!!!!!!!!
                         print("Lavender town reached")
                         sleep(1)
                         #doors question
