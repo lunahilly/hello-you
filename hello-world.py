@@ -1,7 +1,6 @@
 from time import sleep
-from pygame import mixer
-mixer.init()
-mixer.music.load('explosion.mp3')
+from winsound import PlaySound
+import winsound
 
 friend = 0
 alist = ["a", "A"]
@@ -48,7 +47,7 @@ while True:
             sleep(2)
             print("You hear something rumble in the distance")
             sleep(2)
-            print("The bushes next to you start shaking, you and " + name + " start preparing for battle")
+            print("The bushes next to you start shaking, you and " + Eevee + " start preparing for battle")
             sleep(2)
             print("Something jumps out of the bush!")
             sleep(2)
@@ -147,9 +146,7 @@ while True:
                         sleep(1)
                         print("You and eevee continue walking to lavender town")
                         sleep(2)
-                        mixer.init()
-                        mixer.music.load('explosion.mp3')
-                        mixer.music.play('explosion.mp3')
+                        winsound.PlaySound('lavender-.wav', winsound.SND_ASYNC)
                         #play lavender town music
                         #put lavender town music file in the same map as this code file!!!!!!!!!
                         print("Lavender town reached")
@@ -239,7 +236,7 @@ while True:
                                 sleep(2)
                                 print("Guess she really liked the fire huh")
                                 sleep(2)
-                                print("-some time later-")
+                                print("-in the future-")
                                 sleep(2)
                                 print("You and " + Eevee + " have settled in nicely in lavender town")
                                 sleep(2)
