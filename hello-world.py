@@ -184,7 +184,7 @@ while True:
                                 sleep(2)
                                 print("You arrive at the racetracks. There are some cars on the tracks")
                                 sleep(2)
-                                print("Sparky shows you the car he races withh from time to time")
+                                print("Sparky shows you the car he races with from time to time")
                                 sleep(2)
                                 print("You and " + Eevee + " meet some racers")
                                 sleep(2)
@@ -651,15 +651,16 @@ while True:
             sleep(2)
             print("You can play again to try and get a different ending")
             sleep(3)
-    while True:
-        print("Would you like to play again? yes/no")
-        answer0 = input()
-        if answer0 == "yes":
-            print("goodluck!")
-            sleep(2)
-            break
-        if answer == "no":
-            print("goodbye!")
-            break
-        else: 
-            print("Sorry thats not a valid answer, try again!")
+    print("Would you like to play again? yes/no")
+    answer0 = input()
+    
+    if answer0 == "yes":
+        print("goodluck!")
+        sleep(2)
+            
+    if answer0 == "no":
+        print("goodbye!")
+        break
+        
+    else: 
+        print("Sorry thats not a valid answer, try again!")
