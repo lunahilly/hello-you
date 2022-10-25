@@ -12,6 +12,7 @@ dlist = ["d", "D"]
 #speelt af in een pokemon wereld
 #trainer name and Eevee name can be chosen
 while True: 
+    winsound.PlaySound('background.wav', winsound.SND_ASYNC)
     print("^Hello, i am professor Goei and welcome to the world of pokemon^")
     sleep(1)
     print("^What is your name pokemon trainer?^")
@@ -147,6 +148,7 @@ while True:
                         print("Bulbasoar fainted...")
                         sleep(1)
                         print("You and eevee continue walking to lavender town")
+                        winsound.PlaySound(None, winsound.SND_PURGE)
                         sleep(2)
                         winsound.PlaySound('lavender-.wav', winsound.SND_ASYNC)
                         #play lavender town music
@@ -525,6 +527,7 @@ while True:
                 print("*your eevee didnt gain love*")
                 sleep(2)
                 print("-you arrive in lavender town-")
+                winsound.PlaySound(None, winsound.SND_PURGE)
                 sleep(1)
                 winsound.PlaySound('lavender-.wav', winsound.SND_ASYNC)
                 sleep(2)
