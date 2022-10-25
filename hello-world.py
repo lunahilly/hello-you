@@ -37,7 +37,7 @@ while True:
     sleep(2)
     print("Which path wil you chose?")
     sleep(2)
-    print("Left (dark and ominous) or right (safe and bright)")
+    print("left (dark and ominous) or right (safe and bright)")
     answer = input()
     if answer == "left":
             #safe choice, story continues
@@ -102,7 +102,9 @@ while True:
                     sleep(2)
                     print("There is a nice looking Tyranitar there")
                     sleep(2)
-                    print("OH!" + sleep(1) + " It wants to battle...")
+                    print("OH!") 
+                    sleep(1)
+                    print("It wants to battle...")
                     sleep(2)
                     print("The tyranitar uses CRUNCH")
                     sleep(1)
@@ -116,7 +118,7 @@ while True:
                     sleep(1)
                     print("You can play again to try and get a different ending")
                     sleep(2)
-                    
+                
                 if answer5 == "no":
                     print("You go on path no....")
                     sleep(2)
@@ -386,7 +388,7 @@ while True:
                                 sleep(2)
                                 print("Eevee has taken an interest into the neon lights")
                                 sleep(2)
-                                print(eevee + " likes the disco")
+                                print(Eevee + " likes the disco")
                                 sleep(2)
                                 print("+10 love, +40 darkness")
                                 sleep(2)
@@ -439,9 +441,9 @@ while True:
                                 print("Eevee gains +10 love and +50 water")
                                 sleep(2)
                                 print("Oh? Eevee is evolving!")
-                                sleep(3)
-                                print("Eevee has evolved into a Vaporeon!")
                                 sleep(2)
+                                print("Eevee has evolved into a Vaporeon!")
+                                sleep(3)
                                 print("-some time later in the future")
                                 sleep(2)
                                 print("You got a job at the waterpark with vaporeon")
@@ -497,7 +499,9 @@ while True:
                         sleep(2)
                         print("There is a nice looking Tyranitar there")
                         sleep(2)
-                        print("OH!" + sleep(1) + " It wants to battle...")
+                        print("OH!")
+                        sleep(1) 
+                        print("It wants to battle...")
                         sleep(2)
                         print("The tyranitar uses CRUNCH")
                         sleep(1)
@@ -521,6 +525,8 @@ while True:
                 print("*your eevee didnt gain love*")
                 sleep(2)
                 print("-you arrive in lavender town-")
+                sleep(1)
+                winsound.PlaySound('lavender-.wav', winsound.SND_ASYNC)
                 sleep(2)
                 print("After a long and hard journey you and eevee can finally rest on a bench")
                 sleep(2)
@@ -592,8 +598,6 @@ while True:
                         sleep(3)
                         print("Eevee has evolved into an umbreon!")
                         sleep(2)
-                        print("Achievement unlocked: Umbreon")
-                        sleep(2)
                         print("-some time later-")
                         sleep(2)
                         print("You and " + Eevee + " have settled in into lavender town!")
@@ -604,7 +608,7 @@ while True:
                         sleep(2)
                         print("I am proud of you " + name)
                         sleep(3)
-                if answer == "no":
+                if answer3 == "no":
                         print("^Thats a shame :(")
                         sleep(2)
                         print("^I guess i'll talk to you some other time...")
@@ -651,16 +655,21 @@ while True:
             sleep(2)
             print("You can play again to try and get a different ending")
             sleep(3)
-    print("Would you like to play again? yes/no")
-    answer0 = input()
-    
-    if answer0 == "yes":
-        print("goodluck!")
-        sleep(2)
-            
+
+    while True: 
+        print("Would you like to play again? yes/no")
+        answer0 = input()
+        if answer0 == "yes":
+            print("goodluck!")
+            winsound.PlaySound('lavender-.wav', winsound.SND_ASYNC)
+            sleep(2)
+            break
+        if answer0 == "no":
+            print("Goodbye!")
+            sleep(1)
+            break
+        else: 
+            print("Sorry thats not a valid answer, try again!")        
     if answer0 == "no":
-        print("goodbye!")
+    
         break
-        
-    else: 
-        print("Sorry thats not a valid answer, try again!")
