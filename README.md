@@ -1,4 +1,7 @@
 # hello-you
+
+BACKGROUND MUSIC
+
 eindopdracht van hello you
 dit is een tweede branch for alleen de code van hello world aangezien de eerste problemen had
 
@@ -34,6 +37,8 @@ Labelled:
 
 1 = death 
 2 = safe
+
+----if you chose path no you get an "are you sure path", if you are not sure you wanna chose no you will go back to path yes and die----
 
 You arrive in lavender town
 #play lavender town music Pokémon yellow
@@ -88,3 +93,10 @@ Accept the invite: you meet more people and your eevee gains friends (sylveon ev
 Invite her to a walk in the moonlight instead: your eevee has a great time with pikachu and loves the moonlight, evolves into umbreon after pikachu kiss
 
 No – Your eevee and the pikachu dont play, eevee doesn’t gain a friend or evolve, you and eevee life in lonelyness
+
+
+
+
+
+
+Er zitten muziek files bij zodat de muziek in de code werkt
