@@ -345,6 +345,9 @@ while True:
                                 sleep(2)
                                 print("You notice your eevee is playing with charmeleon and he is showing her some fire tricks")
                                 sleep(2)
+                                print("Eevee made a friend!")
+                                friend = friend + 1
+                                sleep(2)
                                 print("Eevee gains +10 love and +10 arsonist")
                                 sleep(2)
                                 print("Oh? Eevee is evolving!")
@@ -753,6 +756,8 @@ while True:
                                 print("You are friends with aqua and give her your employe discount at the waterpark")
                                 sleep(2)
                                 print("Vaporeon and magicarp are now best friends!")
+                                friend = friend + 1
+
                                 sleep(2)
                                 print("You and " + Eevee + " have settled into lavedertown nicely")
                                 sleep(3)
@@ -999,6 +1004,7 @@ while True:
                         sleep(3)
                         print("Congratulations! You got the umbreon love ending")
                         sleep(2)
+                        friend = friend + 1
                         print("I am proud of you " + name)
                         sleep(3)
                 if answer3 == "no":
@@ -1050,6 +1056,9 @@ while True:
             sleep(3)
 
     while True: 
+        print("The amount of friends you obtained:")
+        print(friend)
+        sleep(1)
         print("Would you like to play again? yes/no")
         answer0 = input()
         if answer0 == "yes":
