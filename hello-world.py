@@ -91,7 +91,7 @@ while True:
             print("*" + Eevee + " made a friend!*")
             sleep(2)
             print("Achievement unlocked: Friends")
-            friend = friend + 1
+            friend + 1
             print("Your eevee's love has increased by 10")
             # continue story
             sleep(2)
@@ -137,7 +137,7 @@ while True:
                 print("Snorlax seems happier, i guess it was just having a bad day")
                 sleep(2)
                 print("Snorlax and Eevee become friends, + 1 friend, + 10 love")
-                friend = friend + 1
+                friend + 1
                 print("You and " + Eevee + " continue your journey to lavender town...")
                 sleep(2)
                 #story continues to all the eevee endings
@@ -756,7 +756,7 @@ while True:
                                 print("You are friends with aqua and give her your employe discount at the waterpark")
                                 sleep(2)
                                 print("Vaporeon and magicarp are now best friends!")
-                                friend = friend + 1
+                                friend + 1
 
                                 sleep(2)
                                 print("You and " + Eevee + " have settled into lavedertown nicely")
@@ -1004,7 +1004,7 @@ while True:
                         sleep(3)
                         print("Congratulations! You got the umbreon love ending")
                         sleep(2)
-                        friend = friend + 1
+                        friend + 1
                         print("I am proud of you " + name)
                         sleep(3)
                 if answer3 == "no":
@@ -1056,8 +1056,6 @@ while True:
             sleep(3)
 
     while True: 
-        print("The amount of friends you obtained:")
-        print(friend)
         sleep(1)
         print("Would you like to play again? yes/no")
         answer0 = input()
